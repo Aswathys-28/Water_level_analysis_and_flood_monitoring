@@ -1,0 +1,26 @@
+.level{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.PrdtBtn{
+    margin-top: 100px;
+    width: 200px;
+    height: 50px;
+    background-color: #1679AB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-size: 20px;
+}
+.PrdtBtn:hover{
+    background-color: #071952;
+    transition: ease;
+    color: white;
+}
+.level h1{
+    color: white;
+    font-family: 'montserrat', Arial, sans-serif;
+}

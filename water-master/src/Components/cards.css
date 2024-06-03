@@ -1,0 +1,143 @@
+.cards {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: 300px;
+    height: 150px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: white;
+    border: 2px solid rgb(20, 73, 94);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    opacity: 80%;
+    margin-top: 5%;
+    box-shadow: 0 2px 5px rgb(23, 61, 111, 0.9);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255,255,255,.2);
+    background-color: rgba(25, 25, 40, 0.75);
+  }
+  
+  .tempIcon {
+    font-size: 20px;
+  }
+  
+  .Prediction {
+    justify-content: space-around;
+    color: white;
+    display: flex;
+    opacity: 0.6;
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%; /* Adjust the width based on screen size */
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .pressure {
+    width: 30%;
+    height: 30%;
+    color: rgb(61, 194, 61);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .Prediction span {
+    color: green;
+  }
+  
+  h4 {
+    color: red;
+  }
+  
+  .pressure b {
+    color: rgb(207, 24, 24);
+  }
+  
+  .PREDICTION_HEADING {
+    text-align: center;
+    background-color: white;
+    width: 30%;  
+    justify-content: center;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 5px;
+
+  }
+  
+  .Buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Alerts {
+    width: 30%; /* Adjust the width based on screen size */
+    height: 30%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    font-family: Arial, sans-serif;
+    color: white;
+    animation: blink 1s infinite alternate; /* Blink animation */
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1; /* Start with full opacity */
+    }
+    100% {
+      opacity: 0; /* End with 0 opacity (invisible) */
+    }
+  }
+  
+  /* Media Queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .card {
+        margin-top: 10%;
+      width: 90%; /* Adjust card width for smaller screens */
+    }
+  
+    .Prediction {
+      width: 90%; /* Adjust prediction container width for smaller screens */
+    }
+  
+    .PREDICTION_HEADING {
+      width: 90%; /* Adjust heading width for smaller screens */
+    }
+  
+    .Alerts {
+      width: 90%; /* Adjust alerts container width for smaller screens */
+    }
+    .Prediction {
+        width: 100%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust dynamically based on content */
+        max-height: 500px; /* Set a maximum height for smaller screens */
+        margin-top: 5px; /* Adjust top margin for smaller screens */
+      }
+      .Prediction span{
+        font-size: 12px;
+      }
+  }
+  

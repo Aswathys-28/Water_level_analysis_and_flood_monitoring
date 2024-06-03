@@ -1,0 +1,76 @@
+.navBar {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(224, 225, 224);
+  margin: auto;
+  box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: 'montserrat', Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.user-container {
+  position: fixed;  
+  right: 10px; 
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.Location {
+  width: 100px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  color: black;
+  left: 6%;
+  top: 0;
+  z-index: 999;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Location span {
+  margin-left: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .navBar {
+    margin-top: 50px;
+  }
+  
+  .Location {
+   top: 67px;
+
+  }
+
+  .main {
+    justify-content: center; /* Center align main content on smaller screens */
+    align-items: center;
+  }
+
+  .navBar h1{
+    margin-top: 20px;
+  }
+
+  .user-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+  }
+}
